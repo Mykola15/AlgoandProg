@@ -8,7 +8,7 @@ int main(void)
     int wordsnumber = 0, wordcheck;
     size_t lengthtext;
     int j = 1;
-    char text[256], delimiter[7] = " .,:;-\n";
+    char text[256], delimiter[8] = " .,:;-\n";
     int counter=0;
     fgets(text, 256, stdin);
     if (text[strlen(text) - 1] == '\n')
