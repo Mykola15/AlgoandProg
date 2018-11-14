@@ -14,7 +14,7 @@ int main(void)
     if (text[strlen(text) - 1] == '\n')
     text[strlen(text) - 1] = '\0';
 
-    char *word=strtok(text," ");
+    char *word=strtok(text,delimiter);
     char *word1=word;
     while (word!=NULL)
     {
@@ -22,7 +22,7 @@ int main(void)
         {
             counter+=1;
         }
-        word=strtok(NULL," ");
+        word=strtok(NULL,delimiter);
     }
     printf("\n%s = %d times",word1,counter);
 }
